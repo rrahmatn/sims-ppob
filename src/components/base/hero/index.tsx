@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
   const [balance, setBalance] = useState<number>(0);
   const user = useSelector((state: RootState) => state.user);
   const img = useSelector((state: RootState) => state.user.profile_image);
-  const [cookies, setCookie, removeCookie] = useCookies(["access_token"]);
+  const [cookies ] = useCookies(["access_token"]);
 
   const getBalance = async () => {
     try {

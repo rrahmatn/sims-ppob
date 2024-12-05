@@ -17,7 +17,7 @@ const PaymentPage: React.FC = () => {
 
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
-  const [cookies, setCookie, removeCookie] = useCookies(["access_token"]);
+  const [cookies ] = useCookies(["access_token"]);
 
   useEffect(() => {
     if (payments.service_tariff === 0) {
