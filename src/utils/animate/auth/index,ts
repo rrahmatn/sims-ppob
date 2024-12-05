@@ -1,0 +1,32 @@
+import { Variants } from "framer-motion";
+
+export const containerVariants: Variants = {
+  initial: {
+    opacity: 0,
+    scale: 0.8,
+  },
+  animate: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
+  exit: {
+    opacity: 0,
+    scale: 1.2,
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
+};
+
+export const contentVariants: Variants = {
+  initial: {
+    x: -200,
+  },
+  animate: {
+    x: 0,
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
+  exit: {
+    x: 200,
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
+};

@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",  // Pastikan ini untuk React 17+
+    "module": "esnext",   // Atur module menjadi esnext
+    "target": "es5",      // Sesuaikan target ECMAScript sesuai kebutuhan
+    "strict": true,       // Aktifkan mode strict untuk pemeriksaan tipe yang lebih ketat
+    "esModuleInterop": true ,
+    "moduleResolution": "node" // Untuk kompatibilitas impor
+  }
+}
