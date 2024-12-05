@@ -29,6 +29,7 @@ const ProfilePage: React.FC = () => {
     if (user.email === "") {
       navigate("/");
     }
+     // eslint-disable-next-line
   }, []);
 
   const updateProfileHandler = useFormik({

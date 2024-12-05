@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FailedModal, Hero, Layout, SuccessModal } from "../../components";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { useFormik } from "formik";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 import axios from "axios";
@@ -23,6 +23,7 @@ const PaymentPage: React.FC = () => {
     if (payments.service_tariff === 0) {
       navigate("/");
     }
+     // eslint-disable-next-line
   }, []);
 
   const transactionHandler = useFormik({

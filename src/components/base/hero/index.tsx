@@ -31,6 +31,7 @@ export const Hero: React.FC = () => {
     if (cookies.access_token) {
       getBalance();
     }
+     // eslint-disable-next-line
   }, []);
 
   return (
