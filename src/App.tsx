@@ -10,7 +10,6 @@ import ProfilePage from "./pages/profile";
 
 const App = () => {
   return (
-   
       <BrowserRouter>
         <Routes>
           <Route index path="/" element={<Home />} />
