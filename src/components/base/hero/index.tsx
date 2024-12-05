@@ -69,7 +69,7 @@ export const Hero: React.FC = () => {
             onClick={() => setShowBalance(!showBalance)}
             className="text-white flex flex-row w-full items-center gap-2 cursor-pointer"
           >
-            Lihat saldo {!showBalance ? <IoMdEyeOff /> : <IoMdEye />}
+           {!showBalance ? "Lihat saldo" : "Sembunyikan saldo"} {!showBalance ? <IoMdEyeOff /> : <IoMdEye />}
           </button>
         </div>
       </section>
